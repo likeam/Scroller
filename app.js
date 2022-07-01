@@ -37,9 +37,10 @@ function nextProfile(){
     <li class = "list-group-item">Age: ${currentProfile.age}</li>
     <li class = "list-group-item">Gender: ${currentProfile.gender}</li>
     <li class = "list-group-item">Location: ${currentProfile.location}</li>
-    <li class = "list-group-item">Image: ${currentProfile.image}</li>
+    
     </ul>
     `;
+    document.getElementById('imageDisplay').innerHTML = `<img src = ${currentProfile.image}>`
 }
 
 function profileIterator(profiles){
